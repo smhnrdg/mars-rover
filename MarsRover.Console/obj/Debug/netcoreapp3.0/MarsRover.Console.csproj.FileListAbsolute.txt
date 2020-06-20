@@ -1,0 +1,2 @@
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Console\obj\Debug\netcoreapp3.0\MarsRover.Console.AssemblyInfoInputs.cache
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Console\obj\Debug\netcoreapp3.0\MarsRover.Console.AssemblyInfo.cs

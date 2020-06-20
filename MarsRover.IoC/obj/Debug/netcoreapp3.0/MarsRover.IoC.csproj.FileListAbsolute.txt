@@ -1,0 +1,15 @@
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\bin\Debug\netcoreapp3.0\MarsRover.IoC.deps.json
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\bin\Debug\netcoreapp3.0\MarsRover.IoC.dll
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\obj\Debug\netcoreapp3.0\MarsRover.IoC.AssemblyInfoInputs.cache
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\obj\Debug\netcoreapp3.0\MarsRover.IoC.AssemblyInfo.cs
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\bin\Debug\netcoreapp3.0\MarsRover.IoC.pdb
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\bin\Debug\netcoreapp3.0\MarsRover.Business.dll
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\bin\Debug\netcoreapp3.0\MarsRover.Common.dll
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\bin\Debug\netcoreapp3.0\MarsRover.Core.dll
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\bin\Debug\netcoreapp3.0\MarsRover.Business.pdb
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\bin\Debug\netcoreapp3.0\MarsRover.Core.pdb
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\bin\Debug\netcoreapp3.0\MarsRover.Common.pdb
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\obj\Debug\netcoreapp3.0\MarsRover.IoC.csprojAssemblyReference.cache
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\obj\Debug\netcoreapp3.0\MarsRover.IoC.csproj.CopyComplete
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\obj\Debug\netcoreapp3.0\MarsRover.IoC.dll
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.IoC\obj\Debug\netcoreapp3.0\MarsRover.IoC.pdb
