@@ -2,6 +2,8 @@ using MarsRover.Business.Services;
 using MarsRover.Common.Enum;
 using MarsRover.Common.Exceptions;
 using MarsRover.Core.Interfaces;
+using MarsRover.IoC;
+using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
 
 namespace MarsRover.Test
@@ -13,12 +15,12 @@ namespace MarsRover.Test
         [SetUp]
         public void Setup()
         {
-            rover = new Rover
-            {
-                LocationX = 1,
-                LocationY = 2,
-                Direction = RoverDirections.N
-            };
+            var services = ServiceContainerBuilder.ConfigureServices();
+            var serviceProvider = services.BuildServiceProvider();
+
+            rover = serviceProvider.GetService<IRover>();
+
+            rover.SetPosition("1 2 N");
         }
 
         [Test]

@@ -1,6 +1,8 @@
 ﻿using MarsRover.Business.Services;
 using MarsRover.Common.Exceptions;
 using MarsRover.Core.Interfaces;
+using MarsRover.IoC;
+using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -16,8 +18,11 @@ namespace MarsRover.Test
         [SetUp]
         public void Setup()
         {
-            plateau = new Plateau();
-            rover = new Rover();
+            var services = ServiceContainerBuilder.ConfigureServices();
+            var serviceProvider = services.BuildServiceProvider();
+
+            plateau = serviceProvider.GetService<IPlateau>();
+            rover = serviceProvider.GetService<IRover>();
         }
 
 

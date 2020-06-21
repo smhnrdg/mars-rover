@@ -96,3 +96,7 @@ C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Test\bin\Debug\netcoreap
 C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Test\bin\Debug\netcoreapp3.0\MarsRover.Business.pdb
 C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Test\bin\Debug\netcoreapp3.0\MarsRover.Core.pdb
 C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Test\bin\Debug\netcoreapp3.0\MarsRover.Common.pdb
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Test\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Test\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Test\bin\Debug\netcoreapp3.0\MarsRover.IoC.dll
+C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Test\bin\Debug\netcoreapp3.0\MarsRover.IoC.pdb

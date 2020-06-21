@@ -61,6 +61,27 @@
           "lib/netstandard1.3/Microsoft.DotNet.InternalAbstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.DependencyInjection/3.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.5"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
       "Microsoft.NET.Test.Sdk/16.2.0": {
         "type": "package",
         "dependencies": {
@@ -1474,6 +1495,21 @@
         "runtime": {
           "bin/placeholder/MarsRover.Core.dll": {}
         }
+      },
+      "MarsRover.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "MarsRover.Business": "1.0.0",
+          "MarsRover.Core": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "3.1.5"
+        },
+        "compile": {
+          "bin/placeholder/MarsRover.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MarsRover.IoC.dll": {}
+        }
       }
     }
   },
@@ -1582,6 +1618,40 @@
         "Microsoft.DotNet.InternalAbstractions.nuspec",
         "lib/net451/Microsoft.DotNet.InternalAbstractions.dll",
         "lib/netstandard1.3/Microsoft.DotNet.InternalAbstractions.dll"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/3.1.5": {
+      "sha512": "I+RTJQi7TtenIHZqL2zr6523PYXfL88Ruu4UIVmspIxdw14GHd8zZ+2dGLSdwX7fn41Hth4d42S1e1iHWVOJyQ==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/3.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.3.1.5.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.5": {
+      "sha512": "2VSCj2TZPMdeEi279Lawi6qJQu4+sEWizSOYrhY6hapyS1jxn1jVUZT1Ugv68bya+x8+3lD4+RqhUZql9PhISQ==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.3.1.5.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
     "Microsoft.NET.Test.Sdk/16.2.0": {
@@ -5265,12 +5335,19 @@
       "type": "project",
       "path": "../MarsRover.Core/MarsRover.Core.csproj",
       "msbuildProject": "../MarsRover.Core/MarsRover.Core.csproj"
+    },
+    "MarsRover.IoC/1.0.0": {
+      "type": "project",
+      "path": "../MarsRover.IoC/MarsRover.IoC.csproj",
+      "msbuildProject": "../MarsRover.IoC/MarsRover.IoC.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "MarsRover.Business >= 1.0.0",
       "MarsRover.Core >= 1.0.0",
+      "MarsRover.IoC >= 1.0.0",
+      "Microsoft.Extensions.DependencyInjection >= 3.1.5",
       "Microsoft.NET.Test.Sdk >= 16.2.0",
       "NUnit3TestAdapter >= 3.13.0",
       "nunit >= 3.12.0"
@@ -5315,6 +5392,9 @@
             },
             "C:\\Users\\semih.nurdagi\\source\\repos\\MarsRover\\MarsRover.Core\\MarsRover.Core.csproj": {
               "projectPath": "C:\\Users\\semih.nurdagi\\source\\repos\\MarsRover\\MarsRover.Core\\MarsRover.Core.csproj"
+            },
+            "C:\\Users\\semih.nurdagi\\source\\repos\\MarsRover\\MarsRover.IoC\\MarsRover.IoC.csproj": {
+              "projectPath": "C:\\Users\\semih.nurdagi\\source\\repos\\MarsRover\\MarsRover.IoC\\MarsRover.IoC.csproj"
             }
           }
         }
@@ -5328,6 +5408,10 @@
     "frameworks": {
       "netcoreapp3.0": {
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[3.1.5, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.2.0, )"

@@ -2,6 +2,8 @@
 using MarsRover.Common.Enum;
 using MarsRover.Common.Exceptions;
 using MarsRover.Core.Interfaces;
+using MarsRover.IoC;
+using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -12,21 +14,27 @@ namespace MarsRover.Test
     public class RoverCommanderTest
     {
         private IRoverCommander roverCommander;
+        private IPlateau plateau;
+        private IRover rover;
 
         [SetUp]
         public void Setup()
         {
-            roverCommander = new RoverCommander()
-            {
-                Plateau = new Plateau()
-                {
-                    SizeX = 5,
-                    SizeY = 5,
-                }
-            };
+            var services = ServiceContainerBuilder.ConfigureServices();
+            var serviceProvider = services.BuildServiceProvider();
 
-            roverCommander.Plateau.Rovers.Add(new Rover() { LocationX = 1, LocationY = 2, Direction = RoverDirections.N, Commands = "LMLMLMLMM" });
-            }
+            var plateau = serviceProvider.GetService<IPlateau>();
+            plateau.SetSize("5 5");
+
+            roverCommander = serviceProvider.GetService<IRoverCommander>();
+            roverCommander.Plateau = plateau;
+
+            rover = serviceProvider.GetService<IRover>();
+            rover.SetPosition("1 2 N");
+            rover.Commands = "LMLMLMLMM";
+
+            roverCommander.Plateau.AddRover(rover);
+        }
 
         [Test]
         public void RoverCommander_Move()
