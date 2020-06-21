@@ -1,7 +1,0 @@
-C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Common\bin\Debug\netcoreapp3.0\MarsRover.Common.deps.json
-C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Common\bin\Debug\netcoreapp3.0\MarsRover.Common.dll
-C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Common\bin\Debug\netcoreapp3.0\MarsRover.Common.pdb
-C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Common\obj\Debug\netcoreapp3.0\MarsRover.Common.AssemblyInfoInputs.cache
-C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Common\obj\Debug\netcoreapp3.0\MarsRover.Common.AssemblyInfo.cs
-C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Common\obj\Debug\netcoreapp3.0\MarsRover.Common.dll
-C:\Users\semih.nurdagi\source\repos\MarsRover\MarsRover.Common\obj\Debug\netcoreapp3.0\MarsRover.Common.pdb
